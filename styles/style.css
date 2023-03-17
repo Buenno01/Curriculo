@@ -1,0 +1,262 @@
+:root{
+    --cor-rosa: #ff6192;
+    --cor-azul: #033fdc;
+    --cor-marinho: #080B14;
+    --cor-branco: #f3f2f5;
+    --cor-roxo-escuro: #171829;
+    --cor-rosa-hover: #F6B9DE;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    background-color: var(--cor-marinho);
+    color: var(--cor-branco);
+}
+
+.header{
+    display: flex;
+    padding: 3% 15% 0 15%;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-items{
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.menu-items:hover{
+    color: var(--cor-rosa-hover);
+}
+
+.language{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: var(--cor-branco);
+}
+.language:hover{
+    color: var(--cor-rosa-hover);
+}
+
+.conteudo
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    min-height: 80vh;
+    padding: 5% 15%;
+}
+
+.conteudo-artigo
+{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.conteudo-artigo-titulo{
+    color: var(--cor-rosa);
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.destaque-rosa{
+    color: var(--cor-rosa);
+}
+
+.conteudo-foto{
+    width: 50%;
+    height: fit-content;
+    border-radius: 2rem;
+}
+
+.conteudo-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-lista{
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 0.6rem;
+}
+
+.conteudo-lista-link{
+    text-decoration: none;
+    color: var(--cor-branco);
+}
+
+.conteudo-lista-link:hover{
+    text-decoration: none;
+    color: var(--cor-rosa-hover);
+}
+
+.conteudo-redes{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.conteudo-lista-topicos
+{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 37rem;
+    gap: 1rem;
+}
+
+.conteudo-lista-topicos-caixa
+{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.4rem;
+}
+
+.btn-link
+{
+    background: linear-gradient(var(--cor-marinho), var(--cor-marinho)) padding-box,
+    linear-gradient(to right, var(--cor-azul), var(--cor-rosa)) border-box;
+    border: 0.2rem solid transparent;
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    color: var(--cor-rosa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    gap: 0.5rem;
+    width: 8rem;
+}
+
+.btn-link:hover
+{
+    background: linear-gradient(var(--cor-roxo-escuro), var(--cor-roxo-escuro)) padding-box,
+    linear-gradient(to right, var(--cor-azul), var(--cor-rosa)) border-box;
+    color: var(--cor-rosa-hover);
+}
+
+.btn-link-icon
+{
+    fill:var(--cor-rosa);
+    height: 1rem;
+    width: 1rem;
+}
+
+.skill-box
+{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    max-width: 25rem;
+    min-width: 25rem;
+    height: 30rem;
+    background: radial-gradient(var(--cor-marinho),var(--cor-roxo-escuro));
+    border-radius: 2rem;
+}
+
+.box__title{
+    padding-top: 2%;
+    color: var(--cor-rosa);
+}
+
+.footer
+{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 30% 2% 15%;
+    font-weight: 200;
+    background-color: var(--cor-roxo-escuro);
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    max-width: 12rem;
+    gap: 0.3rem;
+}
+
+
+.footer-texto-destacado
+{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-link
+{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-decoration: none;
+    color: var(--cor-branco);
+}
+
+.footer-icon
+{
+    height: 1rem;
+    width: 1rem;
+    fill:var(--cor-branco);
+}
+
+.desenvolvido-por
+{
+    display: flex;
+    padding: 0.2% 0;
+    font-size: small;
+    justify-content: center;
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
+}
+
+@media (max-width: 1200px){
+    .conteudo{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 8%;
+    }
+
+    .conteudo-artigo{
+        padding-top: 5%;
+        width: auto;
+    }
+
+    .conteudo-foto{
+        margin-top: 5%;
+    }
+
+    .header{
+        padding: 4%;
+    }
+
+    .menu{
+        gap: 5%;
+    }
+
+    .footer{
+        flex-flow: column nowrap;
+    }
+    .footer-column{
+        padding-top: 5%;
+        width: auto;
+    }
+}
