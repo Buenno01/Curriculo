@@ -277,6 +277,10 @@ body
     color: var(--cor-branco);
 }
 
+.esconder{
+    display: none;
+}
+
 @media only screen and (max-width: 1200px){
     .conteudo{
         display: flex;
